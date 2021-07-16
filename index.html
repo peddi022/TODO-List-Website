@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-logo.png"/>
+    <title>My TODOs</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">//TODO</h1>
+
+        <form id="task-form">
+
+            <div class="form-group">
+                <label for="task-name">Enter task name</label>
+                <input type="text" id="task-name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="deadline">Complete by</label>
+                <input type="text" id="deadline" class="form-control">
+            </div>
+
+            <!-- <div class="d-grid gap-2"> -->
+            <input type="submit" value="Add task" class="btn btn-outline-dark mt-2 add-task-button">
+            <input type="button" value="Reset UI" class="btn btn-outline-warning mt-2" id="reset-button">
+            <!-- </div> -->
+        </form>
+
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Task</th>
+                    <th>Complete by</th>
+                    <!-- <th></th> -->
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
